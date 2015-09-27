@@ -61,4 +61,6 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
   #added this to get rid of depreciation warinings info here: https://teamtreehouse.com/community/how-do-i-removed-these-depreciation-warnings
   config.expose_current_running_example_as :example 
+  
+#  config.raise_errors_for_deprecations!
 end
