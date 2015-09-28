@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :todo_lists
+  resources :todo_lists do
+  #add nested resource of todo items
+    resources :todo_items
+  end
   # You can have the root of your site routed with "root"
   # root
   root 'todo_lists#index'
